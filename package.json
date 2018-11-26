@@ -4,6 +4,9 @@
   "description": "A website for the tattoo and piercing parlor in Tustin California",
   "main": "index.js",
   "scripts": {
+    "watch": "npm-run-all --parallel start dev",
+    "dev": "web[ack-dev-server",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

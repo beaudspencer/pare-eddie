@@ -1,11 +1,11 @@
-import { Component } from 'react'
+import React from 'react'
+import {
+  withStyles
+} from '@material-ui/core'
+import Home from './home'
 
-export default class App extends Component {
-  constructor() {
-  }
-  render() {
-    return (
-      <h1>Set Up</h1>
-    )
-  }
+export default function App(props) {
+  return (
+    <Home />
+  )
 }

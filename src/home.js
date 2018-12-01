@@ -5,23 +5,18 @@ import {
 
 const styles = {
   background: {
-      height: '40vh',
+      height: '60vh',
       width: '100%',
-      backgroundImage: 'url("https://s3.amazonaws.com/pare-eddie/IMG_20181127_183213.jpg")',
+      backgroundImage: 'url("https://cdn5.vectorstock.com/i/1000x1000/53/34/tribal-tattoo-background-vector-1085334.jpg")',
       backgroundSize: 'cover',
+      backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'    }
-}  
+}
 
 export default function Home(props) {
   return (
-    <div>
-      <Typography
-        color="inherit"
-        variant="h2"
-        component="h2"
-      >
-        Pare Eddie
-      </Typography>
+    <div
+    style={styles.background}>
       <Typography>
         14181 Newport Ave STE E
       </Typography>

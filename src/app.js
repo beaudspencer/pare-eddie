@@ -16,13 +16,17 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#212121'
+    },
+    secondary: {
+      main: '#fff'
     }
   },
   background: {
     default: '#E0E0E0'
   },
   typography: {
-    useNextVariants: true
+    useNextVariants: true,
+    fontFamily: "'Libre Baskerville', serif"
   }
 })
 

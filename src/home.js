@@ -9,13 +9,10 @@ import {
 } from '@material-ui/core'
 
 const styles = {
-  background: {
-      height: '60vh',
-      width: '100%',
-      backgroundImage: 'url("https://cdn5.vectorstock.com/i/1000x1000/53/34/tribal-tattoo-background-vector-1085334.jpg")',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'    }
+  map: {
+    width: '80%',
+    height: '20rem'
+  }
 }
 
 const InfoCard = withStyles({
@@ -71,6 +68,11 @@ export default function Home(props) {
         <WhiteDivider
           variant="fullWidth"
         />
+        <div
+          style={style.map}
+          id="map"
+        >
+        </div>
       </CardContent>
     </InfoCard>
     </div>

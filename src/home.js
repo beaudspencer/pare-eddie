@@ -63,6 +63,7 @@ const Title = withStyles({
 export default class Home extends React.Component {
   constructor(props) {
     super(props)
+    this.mobile = this.props.mobile
     this.center = {
       lat: 33.7349368,
       lng: -117.8260378
@@ -176,7 +177,11 @@ export default class Home extends React.Component {
       >
         Shop Info:
       </Title>
-      {this.renderMobile()}
+      {
+        this.mobile
+        ? this.renderMobile()
+        : this.renderWeb()
+      }
       </div>
     )
   }

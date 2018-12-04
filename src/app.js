@@ -27,15 +27,40 @@ const theme = createMuiTheme({
   }
 })
 
-export default function App(props) {
-  return (
-    <CssBaseline>
-      <MuiThemeProvider theme={theme}>
-        <React.Fragment>
-          <Navi />
-          <Home />
-        </React.Fragment>
-      </MuiThemeProvider>
-    </CssBaseline>
-  )
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      mobile: false
+    }
+  }
+  componentDidMount() {
+    const mql = window.matchMedia('(max-width: 600px)')
+    mql.addListener(event => {
+      if(event.matches) {
+        this.setState({
+          mobile: true
+        })
+      }
+      else {
+        this.setState({
+          mobile: false
+        })
+      }
+    })
+  }
+  render() {
+    return (
+      <CssBaseline>
+        <MuiThemeProvider theme={theme}>
+          <React.Fragment>
+            <Navi />
+            <Home
+              mobile={this.state.mobile}
+            />
+          </React.Fragment>
+        </MuiThemeProvider>
+      </CssBaseline>
+    )
+  }
 }

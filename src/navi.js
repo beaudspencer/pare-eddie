@@ -24,7 +24,7 @@ const Title = withStyles({
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#212121'
+      main: '#484848'
     }
   },
   typography: {

@@ -1,21 +1,18 @@
 import React from 'react'
 import {
-  Button,
-  withStyles,
   CssBaseline
 } from '@material-ui/core'
 import { 
   createMuiTheme,
 } from '@material-ui/core/styles'
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
-import grey from '@material-ui/core/colors/grey'
 import Navi from './navi'
 import Home from './home'
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#212121'
+      main: '#484848'
     },
     secondary: {
       main: '#fff'

@@ -36,6 +36,11 @@ export default class App extends React.Component {
   }
   componentDidMount() {
     const mql = window.matchMedia('(max-width: 600px)')
+    if(mql.matches) {
+      this.setState({
+        mobile: true
+      })
+    }
     mql.addListener(event => {
       if(event.matches) {
         this.setState({

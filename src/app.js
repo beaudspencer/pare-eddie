@@ -7,7 +7,7 @@ import {
 } from '@material-ui/core/styles'
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
 import Navi from './navi'
-import Home from './home'
+import Info from './info-container'
 
 const theme = createMuiTheme({
   palette: {
@@ -60,7 +60,7 @@ export default class App extends React.Component {
         <MuiThemeProvider theme={theme}>
           <React.Fragment>
             <Navi />
-            <Home
+            <Info
               mobile={this.state.mobile}
             />
           </React.Fragment>
